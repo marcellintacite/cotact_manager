@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sanchez&family=Varela&family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body nav {
+    width: 100%;
+    height: 45px;
+    box-shadow: -1px 4px 13px -4px rgba(140, 140, 140, 0.445);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .logo {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav .right {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.right p {
+    padding-left: 10px;
+}
+.right span {
+    padding-left: 10px;
+}
+
+.logo span {
+    color: rebeccapurple;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: aliceblue;
+}
+
+.container .sidebar {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .logout_btn {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
+.logout_btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.container .contacts {
+    flex: 4;
+    position: relative;
+}
+.contacts .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.cards h2 {
+    padding-left: 20px;
+}
+.cards .card {
+    width: 250px;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.card .card_header {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+.card_header .user_box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 136, 136);
+}
+.card_header .action {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(215, 172, 45);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action span {
+    color: #fff;
+    font-size: 14px;
+}
+.user_box span {
+    color: #fff;
+    font-size: 20px;
+}
+.card_header .user_details {
+    padding-left: 10px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.user_details span {
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+}
+.user_details span:first-child{
+    color: #000;
+    font-weight: bold;
+}
+
+.card_body {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_box {
+    padding-top: 15px;
+    width: 80%;
+    margin: auto;
+}
+.contact_box h4 {
+    padding-bottom: 5px;
+}
+.contact_box .contact_c  {
+    margin-top: 5px;
+}
+.contact_c span {
+    font-size: 14px;
+    padding-right: 3px;
+}
+.contacts .card .form_update {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.form_update .form_group {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.form_group span {
+   
+}
+.form_group input {
+    width: 80%;
+    outline: none;
+    border: 1px solid rgb(168, 168, 168);
+    margin: auto;
+    padding: 6px;
+    border-radius: 5px;
+}
+form .btn {
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    background-color: rgb(249, 189, 79);
+    padding: 8px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+}
